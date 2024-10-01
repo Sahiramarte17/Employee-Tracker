@@ -53,3 +53,8 @@ Copy code: npm install
 2.Create a database and run the schema.sql and seeds.sql files to set up the database schema and initial data.
 
 3.Run the application : node index.js
+
+4.Follow the on-screen prompts to manage departments, roles, and employees.
+
+# Demo
+A walkthrough video demonstrating the application’s functionality can be found here.
