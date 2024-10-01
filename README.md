@@ -31,3 +31,17 @@ THEN I am prompted to enter the employee's first name, last name, role, and mana
 
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role, and this information is updated in the database.
+
+# Installation
+
+1.Clone this repository to your local machine.
+
+Copy code: git clone https://github.com/yourusername/employee-tracker.git
+
+2.Navigate to the project directory.
+
+Copy code: cd employee-tracker
+
+3.Install the necessary dependencies.
+
+Copy code: npm install
