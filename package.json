@@ -1,0 +1,16 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "The Employee Tracker is a command-line application that allows business owners to manage their company's employee database efficiently. Users can view and manage departments, roles, and employee information, which aids in organizing and planning business operations.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "pg": "^8.13.0"
+  }
+}
