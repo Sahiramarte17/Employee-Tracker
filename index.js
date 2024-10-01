@@ -10,8 +10,8 @@ const pool = new pg.Pool({
     port: 5432,
 });
 
-inquirer.prompt([
-    {
+async function startApp() {
+    const { action } = await inquirer.prompt({
         type: 'list',
         name: 'action',
         message: 'What would you like to do?',
