@@ -45,3 +45,11 @@ Copy code: cd employee-tracker
 3.Install the necessary dependencies.
 
 Copy code: npm install
+
+# Usage
+
+1.Ensure you have PostgreSQL installed and running.
+
+2.Create a database and run the schema.sql and seeds.sql files to set up the database schema and initial data.
+
+3.Run the application : node index.js
