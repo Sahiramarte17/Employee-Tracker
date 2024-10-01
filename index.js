@@ -9,7 +9,9 @@ inquirer.prompt([
         message: "What would you like to do?",
         choices: [
             "View All Employees",
-            "Add Employee"
+            "Add Employee",
+            "Add Roles",
+            'View All Department'
         ]
     },
    
