@@ -58,3 +58,6 @@ Copy code: npm install
 
 # Demo
 A walkthrough video demonstrating the application’s functionality can be found here.
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
