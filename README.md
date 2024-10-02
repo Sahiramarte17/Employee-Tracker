@@ -57,7 +57,7 @@ Copy code: npm install
 4.Follow the on-screen prompts to manage departments, roles, and employees.
 
 # Demo
-A walkthrough video demonstrating the application’s functionality can be found here.
+A walkthrough video : https://drive.google.com/file/d/15H2QJzN4AhNKfBPk9FQG_X5a_foT-A3s/view
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
