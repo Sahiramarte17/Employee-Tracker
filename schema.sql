@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS employee Cascade;
-CREATE DATABASE employee Cascade;
+DROP DATABASE IF EXISTS employee_tracker_db;
+CREATE DATABASE employee_tracker_db;
 
 \c employee_tracker_db;
 
@@ -11,9 +11,9 @@ CREATE TABLE department (
 
 -- Create roles table
 CREATE TABLE role (
-    id SERIAL PRIMARY KEY
-    tittle VARCHAR(30) UNIQUE NOT NULL
-    salary DECIMAL NOT NULL
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(30) UNIQUE NOT NULL,
+    salary DECIMAL NOT NULL,
     department_id INTEGER NOT NULL REFERENCES department(id)
 
  );

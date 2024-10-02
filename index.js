@@ -3,10 +3,10 @@ const pg = require("pg");
 
 // Configure PostgreSQL client
 const pool = new pg.Pool({
-    user: 'your_db_user',
+    user: 'postgres',
     host: 'localhost',
-    database: 'company',
-    password: 'your_db_password',
+    database: 'employee_tracker_db',
+    password: 'sun',
     port: 5432,
 });
 
@@ -51,6 +51,17 @@ async function startApp() {
 // Function to view all departments
 async function viewDepartments() {
     const res = await pool.query('SELECT * FROM department');
+    console.table(res.rows);
+    startApp();
+}
+
+async function viewRoles() {
+    const res = await pool.query(`
+        SELECT e.id, e.first_name, e.last_name, r.title AS role, d.name AS department, r.salary, m.first_name AS manager
+        FROM employee e
+        JOIN role r ON e.role_id = r.id
+        JOIN department d ON r.department_id = d.id
+        LEFT JOIN employee m ON e.manager_id = m.id`);
     console.table(res.rows);
     startApp();
 }
